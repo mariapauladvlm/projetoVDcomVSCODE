@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Para você ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #7c3aed);
+      background-size: 300% 300%;
+      animation: gradientMove 8s ease infinite;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f8fafc;
+      padding: 20px;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .foto {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 25px;
+      border: 4px solid #fff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .foto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 35px rgba(255, 0, 150, 0.6);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      background: linear-gradient(45deg, #ff4d6d, #ff85a1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+
+    .heart {
+      animation: pulse 1.5s infinite;
+      display: inline-block;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding: 25px 15px;
+      }
+      .foto {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.imgur.com/x89q9Wv.jpg" alt="Nós dois ❤️" class="foto">
+
+    <h1>Happy Valentine’s Day <span class="heart">❤️</span></h1>
+
+    <p>
+      ❤️ Sr. Dalton da Silva Sauro, amor da minha vida ❤️,
+      tenho uma mensagem: O seu código está com uma performance
+      ótima no meu hardware… eu te amo 💘
+    </p>
+
+    <p>
+      Desde que te conheci, minha vida está em produção… e sem bugs.
+    </p>
+  </div>
+</body>
+</html>
